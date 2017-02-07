@@ -31,4 +31,15 @@ var prom = new Promise(function(resolve,reject){
 
 // Custom EVents
 
+<div id = "new">New Div</div>
+
+var ele = document.getElementById('new');
+
+var eve = new CustomEvent('custom', {detail: "custom"});
+var handler = function(ev){
+	console.log("inside handler", ev.target);
+}
+
+ele.addEventListener('custom', handler, false);
+ele.dispatchEvent(eve);
 
