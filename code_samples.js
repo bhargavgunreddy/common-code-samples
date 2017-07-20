@@ -43,3 +43,5 @@ var handler = function(ev){
 ele.addEventListener('custom', handler, false);
 ele.dispatchEvent(eve);
 
+// Closure proper definition
+The children will always remember the secrets they have shared with their parents, even after their parents are gone. This is what closures are for functions.
